@@ -21,3 +21,15 @@ composer require loonpwn/penguin-pass
 ## Usage
 
 `$password = \PenguinPass\Password::generate()`
+
+## Samples
+
+```
+BlueBird40
+CurlyKoala93
+LushApe79
+OldHorse24
+RoundMeerkat67
+OddDolphin81
+FastKoala52
+```
