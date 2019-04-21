@@ -1,0 +1,23 @@
+{
+    "name": "loonpwn/penguin-pass",
+    "description": "Create easy to remember passwords for all ages",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harlan Wilton",
+            "email": "harlan@harlanzw.com"
+        }
+    ],
+  "autoload": {
+    "psr-4": {
+      "PenguinPass\\": "app/"
+    }
+  },
+    "require": {
+        "illuminate/support": "^5.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
