@@ -2,9 +2,9 @@
 
 namespace Tests\Unit;
 
-use Illuminate\Support\Str;
 use PenguinPass\Password;
 use PenguinPass\WordLists;
+use Illuminate\Support\Str;
 use PHPUnit\Framework\TestCase;
 
 class PasswordTest extends TestCase
@@ -18,7 +18,7 @@ class PasswordTest extends TestCase
     {
         $password = Password::generate();
 
-        echo 'Got password: ' . $password;
+        echo 'Got password: '.$password;
 
         $this->assertNotEmpty($password);
         $this->assertTrue(Str::length($password) >= 8);
@@ -44,7 +44,7 @@ class PasswordTest extends TestCase
         for ($i = 0; $i < 100; $i++) {
             $password = Password::generate();
 
-            echo $i . ' Got password: ' . $password . ' ' . (array_flip($passwords)[$password] ?? '-') . "\n";
+            echo $i.' Got password: '.$password.' '.(array_flip($passwords)[$password] ?? '-')."\n";
 
             $this->assertNotEmpty($password);
             $this->assertTrue(Str::length($password) >= 8);
