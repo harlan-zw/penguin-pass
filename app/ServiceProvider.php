@@ -13,7 +13,7 @@ class ServiceProvider extends BaseServiceProvider {
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/password.php' => config_path('passwords.php'),
+            __DIR__.'/../config/passwords.php' => config_path('passwords.php'),
         ]);
     }
 
