@@ -20,7 +20,7 @@ class Generator
      */
     public function __construct($config = [])
     {
-        $default = include 'config/generator.php';
+        $default = config('passwords');
         $config = array_merge($default, $config);
 
         foreach ($config as $k => $v) {
