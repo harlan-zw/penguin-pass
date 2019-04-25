@@ -1,10 +1,11 @@
 <?php
+
 namespace PenguinPass;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class ServiceProvider extends BaseServiceProvider {
-
+class ServiceProvider extends BaseServiceProvider
+{
     /**
      * Perform post-registration booting of services.
      *

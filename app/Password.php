@@ -10,5 +10,4 @@ class Password extends Facade
     {
         return (new Generator)->make();
     }
-
 }
