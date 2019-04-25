@@ -12,10 +12,11 @@ class WordLists
      */
     public function __construct()
     {
-        $this->adjectiveList = collect(explode("\n", file_get_contents('resources/adjectives.txt')))->filter(function ($line) {
+        $path = dirname(__DIR__) . '/';
+        $this->adjectiveList = collect(explode("\n", file_get_contents($path . 'resources/adjectives.txt')))->filter(function ($line) {
             return ! empty($line);
         });
-        $this->nounList = collect(explode("\n", file_get_contents('resources/nouns.txt')))->filter(function ($line) {
+        $this->nounList = collect(explode("\n", file_get_contents($path . 'resources/nouns.txt')))->filter(function ($line) {
             return ! empty($line);
         });
     }
