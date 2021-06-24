@@ -2,9 +2,9 @@
 
 namespace Tests\Unit;
 
+use Illuminate\Support\Str;
 use PenguinPass\Password;
 use PenguinPass\WordLists;
-use Illuminate\Support\Str;
 use PHPUnit\Framework\TestCase;
 
 class PasswordTest extends TestCase
